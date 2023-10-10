@@ -1,0 +1,53 @@
+.box-habilidades {
+    margin: 15rem 2rem;
+    h3 {
+        font-size: 2rem;
+        & span {
+            color: rgb(142, 34, 220);
+            font-size: 2rem;
+        }
+    }
+    
+    .slider {
+      display: flex; /* Muestra las imágenes en una fila */
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 5rem 0rem;
+      animation: slide 5s ease infinite; /* Animación de desplazamiento infinito */
+    }
+    
+    .slide {
+      animation: appear 1s ease forwards;
+    }
+    
+    .slide.active {
+      opacity: 1;
+    }
+    
+    img {
+      margin-right: 2rem;
+      height: 4rem;
+    }
+    
+    @keyframes slide {
+      0% {
+        transform: translateX(0); /* Inicia desde la posición inicial */
+      }
+      50% {
+        transform: translateX(1%); /* Se desplaza hacia la derecha */
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+    
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+}

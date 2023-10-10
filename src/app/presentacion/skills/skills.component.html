@@ -1,0 +1,10 @@
+<div class="box-habilidades" id="habilidades">
+    <h3><span>2.</span> habilidades</h3>
+    <div class="slider">
+      <ng-container *ngFor="let image of images; let i = index">
+        <div class="slide" [ngClass]="{ active: i === currentIndex }">
+          <img [src]="image" alt="Imagen" height="100">
+        </div>
+      </ng-container>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+.content-profile {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Esto centra horizontalmente */
+    align-items: center; /* Esto centra verticalmente */
+    .box-profile {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        padding: 2rem;
+        & .box-desc {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+            & .box-name {
+                text-align: center;
+                & h1 {
+                    font-size: 4rem;
+                }
+                & .box-puesto {
+                    h2 {
+                        font-size: 2.4rem;
+    
+                        & span {
+                            font-size: 1.8rem;
+                            color: rgb(142, 34, 220)
+                        }
+                    }
+                }
+            }
+    
+            & .box-text {
+                text-align: center;
+                margin: 1rem auto;
+                & h2 {
+                    font-size: 1.4rem;
+                    font-weight: 900;
+                    color: rgb(165, 68, 234);
+                }
+            }
+        }
+        & .box-photo {
+            padding: 1rem;
+            text-align: center;
+            margin: 0 auto;
+            height: 100%;
+            align-items: center;
+            width: 50%;
+            & img {
+                width: 35rem;
+                border-radius: 50%;
+            }
+        }
+    }
+    @media (max-width:768px) {
+        .box-profile {
+            flex-direction: column-reverse;
+            & .box-desc {
+                width: 100%;
+                margin-top: 1rem;
+                & .box-name {
+                    & h1 {
+                        font-size: 3.5rem;
+                    }
+                }
+        
+                & .box-text {
+                    margin: 0rem;
+                    & h2 {
+                        font-size: 1.45rem;
+                    }
+                }
+            }
+            & .box-photo {
+                padding: 0rem;
+                margin: 0 auto;
+                height: 100%;
+                width: 100%;
+                & img {
+                    width: 55%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+

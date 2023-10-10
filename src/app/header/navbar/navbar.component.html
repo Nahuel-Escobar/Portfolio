@@ -1,0 +1,26 @@
+<header>
+    <nav id="navbar">
+      <div class="box-img">
+        <a href="https://www.linkedin.com/in/esteban-nahuel-escobar/" target="_blank">
+          <img src="../../../assets/img/Logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="box-links">
+        <ul [class.active]="isMenuOpen" class="links active">
+          <a href="#sobreMi"><li> <span>1.</span>Sobre Mi</li></a>
+          <a href="#habilidades"><li> <span>2.</span>Habilidades</li></a>
+          <a href="#proyectos"><li> <span>3.</span>Proyectos</li></a>
+          <a href="#contacto"><li> <span>4.</span>Contacto</li></a>
+          <div class="box-btn">
+            <a href="../../../assets/Cv Esteban Nahuel Escobar.pdf" target="_blank">
+              <button>Curriculum vitae</button>
+            </a>
+          </div>
+        </ul>
+      </div>
+      <div class="hamburger-menu">
+        <button (click)="toggleMenu()">☰</button>
+      </div>
+    </nav>
+</header>
+  
